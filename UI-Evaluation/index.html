@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="default-theme">
+    <nav>
+        <div class="left">UI Evaluation</div>
+        <div class="right">
+            <a href="javascript:void(0);" onclick="scrollToSection('home')">Home</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('about')">About</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('themes')">Themes</a>
+            <a href="javascript:void(0);" onclick="scrollToSection('Quotes')">Quotes</a>
+        </div>
+    </nav>
+    <header id="home">
+        <h1>UI Evaluation</h1>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h2>About UI Evaluation</h2>
+            <p>When evaluating a UI/UX model, two key criteria often come into play: usability and user experience (UX). While related, they focus on different aspects of an interface.</p>
+
+            <h3>Usability</h3>
+            <p>Usability refers to how well the interface functions and whether it works as intended. It focuses on the ease and efficiency with which users can interact with the system.</p>
+
+            <h3>User Experience (UX)</h3>
+            <p>User Experience (UX) goes beyond usability and examines the broader, emotional response users have when interacting with the interface.</p>
+
+            <h3>Key Differences Between Usability and UX</h3>
+            <table id="theme-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Usability</th>
+                        <th>UX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Focus</td>
+                        <td>Efficiency, effectiveness, and ease of use</td>
+                        <td>Emotional response, engagement, and satisfaction</td>
+                    </tr>
+                    <tr>
+                        <td>Measurement</td>
+                        <td>Quantitative metrics (e.g., task completion time, error rates)</td>
+                        <td>Qualitative feedback (e.g., user satisfaction, emotional impact)</td>
+                    </tr>
+                    <tr>
+                        <td>Scope</td>
+                        <td>Functional aspects of the interface</td>
+                        <td>Holistic experience of using the product</td>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>Navigation clarity, input accuracy</td>
+                        <td>Visual design, emotional appeal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="themes">
+            <h2>Explore Themes</h2>
+            <p>Switch between different themes to experience how color and design influence the UI.</p>
+            <div class="button-container">
+                <button class="default" onclick="setTheme('default-theme')">White/Gray Theme</button>
+                <button class="neon" onclick="setTheme('neon-theme')">Neon Theme</button>
+                <button class="rich" onclick="setTheme('rich-theme')">Rich Theme</button>
+                <button class="pastel" onclick="setTheme('pastel-theme')">Pastel Theme</button>
+                <button class="forest" onclick="setTheme('forest-theme')">Dark Forest Theme</button>
+            </div>
+        </section>
+
+        <section id="Quotes">
+            <h2>Quote Generator</h2>
+            <div id="random-interactables">
+                <button onclick="generateQuote()" class="default">Generate Random Quote</button>
+                <div id="quote-container"></div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 UI Evaluation. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
